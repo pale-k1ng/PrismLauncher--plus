@@ -38,6 +38,9 @@
  *      limitations under the License.
  */
 #include "ui/dialogs/MakeServerDialog.h"
+#include "ui/dialogs/AboutDialog.h"
+#include "ui/dialogs/CopyInstanceDialog.h"
+#include "ui/dialogs/MakeServerDialog.h"
 #include "Application.h"
 #include "BuildConfig.h"
 #include "FileSystem.h"

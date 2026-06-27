@@ -88,6 +88,8 @@ class MainWindow : public QMainWindow {
     QMenu* createPopupMenu() override;
 
    private slots:
+   void on_makeServerButton_clicked();  // Add this line
+
     void onCatToggled(bool);
 
     void onCatChanged(int);
@@ -232,6 +234,7 @@ class MainWindow : public QMainWindow {
 
    private:
     Ui::MainWindow* ui;
+QAction *makeServerAction = nullptr;  // Add this line
     // these are managed by Qt's memory management model!
     InstanceView* view = nullptr;
     InstanceProxyModel* proxymodel = nullptr;

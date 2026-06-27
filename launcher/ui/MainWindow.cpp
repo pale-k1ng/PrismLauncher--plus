@@ -37,7 +37,7 @@
  *      See the License for the specific language governing permissions and
  *      limitations under the License.
  */
-
+#include "ui/dialogs/MakeServerDialog.h"
 #include "Application.h"
 #include "BuildConfig.h"
 #include "FileSystem.h"
@@ -1777,6 +1777,12 @@ void MainWindow::setInstanceActionsEnabled(bool enabled)
     ui->actionDeleteInstance->setEnabled(enabled);
     ui->actionCopyInstance->setEnabled(enabled);
     ui->actionCreateInstanceShortcut->setEnabled(enabled);
+}
+
+void MainWindow::on_actionMakeServer_triggered()
+{
+    MakeServerDialog dialog(this);
+    dialog.exec();
 }
 
 void MainWindow::refreshCurrentInstance()

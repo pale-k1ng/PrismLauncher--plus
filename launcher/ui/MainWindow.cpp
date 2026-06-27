@@ -267,7 +267,15 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWi
         auto q = new QShortcut(QKeySequence::Quit, this);
         connect(q, &QShortcut::activated, APPLICATION, &Application::quit);
     }
-
+// i really hate you zaw
+{
+    ui->actionMakeServer = new QAction(this);
+    ui->actionMakeServer->setObjectName(QStringLiteral("actionMakeServer"));
+    ui->actionMakeServer->setText(tr("Make Server"));
+    ui->actionMakeServer->setToolTip(tr("Create a new server"));
+    ui->mainToolBar->addAction(ui->actionMakeServer);
+    connect(ui->actionMakeServer, &QAction::triggered, this, &MainWindow::on_actionMakeServer_triggered);
+}  // <-- NEW SECTION ENDS here
     // Konami Code
     {
         secretEventFilter = new KonamiCode(this);

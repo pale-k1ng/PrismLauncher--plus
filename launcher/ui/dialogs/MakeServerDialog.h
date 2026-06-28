@@ -16,7 +16,4 @@ private slots:
 
 private:
     void setupUI();
-    
-    // UI elements
-    class Ui_MakeServerDialog *ui;
 };

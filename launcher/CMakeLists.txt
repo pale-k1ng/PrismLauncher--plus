@@ -1043,6 +1043,8 @@ SET(LAUNCHER_SOURCES
     ui/pages/modplatform/modrinth/ModrinthResourcePages.h
 
     # GUI - dialogs
+    ui/dialogs/MakeServerDialog.h
+    ui/dialogs/MakeServerDialog.cpp
     ui/dialogs/AboutDialog.cpp
     ui/dialogs/AboutDialog.h
     ui/dialogs/ProfileSelectDialog.cpp

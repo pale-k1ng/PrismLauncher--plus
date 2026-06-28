@@ -90,10 +90,6 @@ class MainWindow : public QMainWindow {
    private slots:
     void on_actionMakeServer_triggered();
 
-    void on_actionMakeServer_triggered();
-
-   void on_makeServerButton_clicked();  // Add this line
-
     void onCatToggled(bool);
 
     void onCatChanged(int);
